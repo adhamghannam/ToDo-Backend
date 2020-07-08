@@ -53,7 +53,7 @@ This applications uses the `Authorization` header with Bearer `token`.
 
 APIs that should not be authenticated by the `token` are:
 
- * Login *
+ * Login
     - Link: http://localhost:8000/login
     - Type: get
     - Parameters:
@@ -61,7 +61,7 @@ APIs that should not be authenticated by the `token` are:
       - password (required)
     - Output: success with "Token" or failure message
 
- * Registration *
+ * Registration
     - Link: http://localhost:8000/register
     - Type: post
     - Parameters:
@@ -76,9 +76,9 @@ APIs that should not be authenticated by the `token` are:
 
 APIs that should be authenticated by the `token` are:
 
-* Logout *
+* Logout
 
-* AddItem *
+* Add Item
    - Link: http://localhost:8000/item
    - Type: post
    - Parameters:
@@ -88,7 +88,7 @@ APIs that should be authenticated by the `token` are:
      - category_id (required, integer, valid category id)
    - Output: success or failure message
 
-* updateItem *
+* Update Item
    - Link: http://localhost:8000/item/{id}
    - Type: put
    - Parameters:
@@ -98,19 +98,19 @@ APIs that should be authenticated by the `token` are:
      - category_id (optional, integer, valid category id)
    - Output: success or failure message
 
-* deleteItem *
+* Delete Item
    - Link: http://localhost:8000/item/{id}
    - Type: delete
    - Parameters: none
    - Output: success or failure message
 
-* getItem *
+* Get Item
    - Link: http://localhost:8000/item/{id}
    - Type: get
    - Parameters: none
    - Output: one todo list item details as a Json format, or failure
 
-* getItems *
+* Get Items
    - Link: http://localhost:8000/items
    - Type: get
    - Parameters:
